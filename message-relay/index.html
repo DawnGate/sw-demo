@@ -1,0 +1,30 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: monospace;
+            font-size: 1rem;
+            white-space: pre-wrap;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div>Serive worker status: <span id="status">not supported</span></div>
+    Open <a href="./index.html" target="_blank"> another window with this page</a> and type some text in below to
+    postmessage it to the ServiceWorker which will forward the message along.
+
+    <div id="received"></div>
+
+    <textarea id="message" style="width: 100%" rows="10"></textarea>
+
+    <script src="./index.js"></script>
+</body>
+
+</html>
