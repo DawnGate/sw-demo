@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="main">
+        <div class="info-status">
+            <label>Data: </label><output id="data"></output>
+            <label>Cache: </label><output id="cache-status"></output>
+            <label>Network: </label><output id="network-status"></output>
+        </div>
+        <div class="body-form">
+            <form>
+                <p>Cache:</p>
+                <input id="cache-fail" type="checkbox">Fail</input>
+                <div>
+                    <label>Delay:</label>
+                    <input id="cache-delay" type="number" value="500"></input>ms
+                </div>
+            </form>
+            <form>
+                <p>Network:</p>
+                <input id="network-fail" type="checkbox">Fail</input>
+                <div>
+                    <label>Delay:</label>
+                    <input id="network-delay" type="number" value="500"></input>ms
+                </div>
+            </form>
+        </div>
+        <button id="get-new-data">Get new data</button>
+    </div>
+    <script src="./index.js"></script>
+</body>
+
+</html>
