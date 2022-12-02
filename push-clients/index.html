@@ -1,0 +1,33 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: monospace;
+            font-size: 1rem;
+            white-space: pre-wrap;
+        }
+    </style>
+</head>
+
+<body>
+
+    <p>This demo shows how to control the clients of a service worker when the user clicks on a push notification</p>
+
+    <p>Press on 'Send notification' and try on of:</p>
+    <ul>
+        <li>- Switching to another page: clicking on the notification will re-focus this page</li>
+        <li>- Closing this page: clicking on the notification will reopen it</li>
+        <li>- Remaining on this page: a different notification will be shown, nothing will happen if you click on it.
+        </li>
+    </ul>
+    <button id="send-notification">Send notification</button>
+    <script src="/tools.js"></script>
+    <script src="./index.js"></script>
+</body>
+
+</html>
